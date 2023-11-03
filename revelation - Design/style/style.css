@@ -1,0 +1,20 @@
+.navbar{
+    background-color: black;
+}
+
+.navbar .container-fluid ul{
+    border-bottom: 1px rgb(102, 101, 101) solid;
+}
+
+.navbar .container-fluid ul a {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.navbar .container-fluid ul a:hover {
+    border-bottom:1px rgb(209, 187, 62) solid ;
+    color:#19A7CE ;
+}
