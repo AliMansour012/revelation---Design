@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Bona Nova', serif;
+}
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.6s
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin-left:auto ;
+    margin-right:auto ;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width:768px) {
+    .container{
+    width:750px
+    }
+}
+@media (min-width:992px) {
+    .container{
+    width:970px
+    }
+}
+@media (min-width:1200px) {
+    .container{
+    width:1170px
+    }
+}
+header{
+    background-color: black;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .container .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(66, 106, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+header .container .logo:hover{
+    transform: scale(1.1);
+    margin-left: 20px;
+    color: #1787e0;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+header .container .links{
+    flex: 1;
+    position: relative;
+}
+header .container .links ul{
+    display:flex;
+    list-style: none;
+    justify-content:end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+header .container .links ul li a{
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+header .container .links ul li a:hover{
+    color:var(--main-color) ;
+    background-color: #fafafa;
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+@media (max-width:992px) {
+    header .container .links ul {
+    display: none;
+    }
+    header .container .links .bar:hover + ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right:0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    } 
+}
+header .container .bar{
+    font-size: 1.4em;
+}
+@media (min-width:992px) {
+header .container .bar {
+    display: none;
+    }
+}
+
+.content{
+    padding: 60px 0px;
+    background-color: #650000
+}
+.content .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content .container .lion{
+    width:20em ;
+    min-height:20em ;
+    box-shadow: 0px 5px 25px  rgba(1 1 1 / 15%);
+    text-align: center;
+    margin: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background-color:rgb(230, 233, 243);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.content .container .lion:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.content .container .lion img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    height: 250px;
+}
+.content .container .lion img:hover{
+    opacity: 0.9;
+}
+.content .container .lion h3{
+    font-size: 1.6em;
+    padding-top: 15px;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.content .container .lion p{
+    font-size: 1.2em;
+    padding-top: 5px;
+    color:rgb(87, 86, 86);
+    
+}
+.footer .container {
+display: flex;
+justify-content: space-between;
+}
+.footer .container p{
+    font-size: 0.8em;
+    text-align:center;
+}
